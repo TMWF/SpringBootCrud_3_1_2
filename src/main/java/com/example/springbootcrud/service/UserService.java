@@ -21,7 +21,7 @@ public class UserService {
     }
 
     public void deleteUserById(long id) {
-        userRepository.deleteUserById(id);
+        userRepository.deleteById(id);
     }
 
     public List<User> getAllUsers() {
