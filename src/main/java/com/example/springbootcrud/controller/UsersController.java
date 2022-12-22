@@ -72,7 +72,7 @@ public class UsersController {
         return "edit";
     }
 
-    @PostMapping("users/{id}")
+    @PatchMapping("users/{id}")
     public String edit(@ModelAttribute("user") User user, @PathVariable("id") long id) {
         userService.saveUser(user);
         return "redirect:/users";

@@ -5,7 +5,7 @@
     <title>Редактировать</title>
 </head>
 <body>
-<form th:method="post" th:action="@{/users/{i}(i=${user.id})}" th:object="${user}">
+<form th:method="patch" th:action="@{/users/{i}(i=${user.id})}" th:object="${user}">
     <label for="n">Имя:</label>
     <input id="n" type="text" th:field="*{name}" th:value="${user.name}">
     <br>
