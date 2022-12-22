@@ -2,6 +2,7 @@ package com.example.springbootcrud.controller;
 
 import com.example.springbootcrud.model.User;
 import com.example.springbootcrud.service.UserService;
+import com.example.springbootcrud.service.UserServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
